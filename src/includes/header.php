@@ -1,4 +1,7 @@
 <header>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top mb-5" id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand js-scroll-trigger text-white font-weight-bold" href="#page-top" id="title-header">Ventes aux enchères</a>
