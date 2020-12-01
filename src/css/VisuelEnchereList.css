@@ -9,8 +9,9 @@ font-family: 'Roboto', sans-serif !important;
 
 
 .card{
-display:flex;
+display:block;
 align-items: center;
+
 }
 /***AJOUT DE DIMENSIONS FIXE POUR LES IMAGES ET LES CONTENUS TXT DES CARD **/
 .card-title{
@@ -20,6 +21,16 @@ width: 290px;
 /**Cache le text si il dépasse de son contenu. N'empeche pas de mettre une limitation de
 caratères dans la validation du formulaire***/
 overflow: hidden!important;
+}
+/**Ajout visuel timer sur card image**/
+.timer{
+    display: flex;
+    justify-content: center;
+   width: 350px;
+
+    border: 1px solid black;
+    background-color: rgb(141, 192, 138) ;
+    z-index: 1;
 }
 .card-img-top{
 height:290px;

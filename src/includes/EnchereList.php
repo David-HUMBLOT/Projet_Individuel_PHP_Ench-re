@@ -13,6 +13,7 @@
     <!--Première ranger de 3 carte-->
     <div class="card-deck mt-5">
   <div class="card ">
+    <div class = "timer"><p>TIMER</p></div>
     <img src="ressources/img/no_image.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h4 class="card-title">NOM PRODUIT</h4>
