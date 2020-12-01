@@ -10,14 +10,21 @@
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/styleListeEnchere.css">
     <link rel="stylesheet" href="src/css/navbar.css">
-
 </head>
 
-    
-
+<!---------------------------------------------------------------------------------------------------------------->
 <body>
+<!--AJOUT INCLUDE HEADER-->
+<?php include 'src/includes/header.php'?>
     
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------->
  <!-- jQuery and JS bundle w/ Popper.js -->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
