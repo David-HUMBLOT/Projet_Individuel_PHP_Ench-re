@@ -28,4 +28,5 @@ width: 100%;
 .card-text{
 height:150px ;
 width: 290px;
+overflow: hidden!important;
 }
