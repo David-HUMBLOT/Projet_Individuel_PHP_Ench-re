@@ -1,0 +1,31 @@
+html, body{
+margin: 0 !important;
+padding: 0 !important;
+width: 100% !important;
+font-size: 20px;
+letter-spacing: 5%;
+font-family: 'Roboto', sans-serif !important;
+}
+
+
+.card{
+display:flex;
+align-items: center;
+}
+/***AJOUT DE DIMENSIONS FIXE POUR LES IMAGES ET LES CONTENUS TXT DES CARD **/
+.card-title{
+font-weight: bold;
+height: 40px;
+width: 290px;
+/**Cache le text si il dépasse de son contenu. N'empeche pas de mettre une limitation de
+caratères dans la validation du formulaire***/
+overflow: hidden!important;
+}
+.card-img-top{
+height:290px;
+width: 100%;
+}
+.card-text{
+height:150px ;
+width: 290px;
+}
