@@ -16,6 +16,8 @@
 <body>
 <!--AJOUT INCLUDE HEADER-->
 <?php include 'src/includes/header.php'?>
+<!--AJOUT A INDEX la liste des encheres visuelle-->
+<?php include 'src/includes/EnchereList.php'?>
     
 
 
