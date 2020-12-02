@@ -42,7 +42,7 @@
 
         <div>
 
-          <form name="ajoutFormulaire" method="POST" action="src/includes/traitement.php">
+          <form name="ajoutFormulaire" method="POST" action="">
             <table>
               <tr>
                 <td><label>NomProduit</label></td>
