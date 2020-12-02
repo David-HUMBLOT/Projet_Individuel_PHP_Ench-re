@@ -14,7 +14,11 @@
   <!--AJOUT INCLUDE HEADER-->
   <?php include 'src/includes/header.php'?>
   <!--Ajout page des fonctions-->
-<?php include 'src/includes/functions' ?>
+<?php include 'src/includes/functions.php' ?>
+  <!--Ajout page traitement.php-->
+  <?php include 'src/includes/traitement.php' ?>
+  
+
     
 
   <!--Formulaire pour la saisie des données pour la déclaration d'une nouvelle enchere-->
@@ -28,15 +32,17 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        left
+       Tu est à gauche
       </div>
       <div class="col-6">
 
+
+
+<!--Creéation formulaire et champs input -->
+
         <div>
 
-        <!--Creéation formulaire et champs input -->
-
-          <form name="MonFormulaire" method="post" action="traitement.php">
+          <form name="ajoutFormulaire" method="POST" action="src/includes/traitement.php">
             <table>
               <tr>
                 <td><label>NomProduit</label></td>
@@ -50,7 +56,7 @@
 
               <tr>
                 <td><label>Prix du Clic</label></td>
-                <td><input type="text" name="PrixClic" required id="PrixClic"></td>
+                <td><input type="text" name="PrixClic" required id="prixClic"></td>
               </tr>
 
               <tr>
@@ -60,48 +66,38 @@
 
               <tr>
                 <td><label>Durée</label></td>
-                <td><input type="text" name="Time" required id="Time"></td>
+                <td><input type="text" name="time" required id="time"></td>
               </tr>
 
               <tr>
                 <td><label>Augmentation duréé</label></td>
-                <td><input type="text" name="TimeUp" required id="TimeUp"></td>
+                <td><input type="text" name="upTime" required id="upTime"></td>
               </tr>
-
-
-
-
-
+              <!--Choisire une image de type file coté admin-->
+              <tr>
+                <td><label>Choix image</label></td>
+                <td><input type="file" value="" name="choixImage" id="choixImage" ></td>
+              </tr>
               <!--BOUTON DE VALIDATION A PARAMETRER-->
               <tr>
-                <td><input type="submit" name="Nom" value="Envoyer"></td>
+                <td><input type="submit" name="ajoutEnchere" value="Envoyer"></td>
                 <td></td>
               </tr>
             </table>
           </form>
 
-
-
-
         </div>
-
-
-
-
-
-
-
-
       </div>
-      <div class="col">
-        right
+
+    <div class="col">
+       Tu est à droite
       </div>
     </div>
-
-
   </div>
 
 
+
+  
 
 
 

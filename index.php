@@ -19,7 +19,7 @@
 <!--AJOUT A INDEX la liste des encheres visuelle-->
 <?php include 'src/includes/EnchereList.php'?>
 <!--Ajout page des fonctions-->
-<?php include 'src/includes/functions' ?>
+<?php include 'src/includes/functions.php' ?>
     
 
 
