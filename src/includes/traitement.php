@@ -2,11 +2,11 @@
 
 
 
-<!--AVEC LA METHODE POST ET LE BUTTON SUBMIT ON  RECUPERE LES DONNER DANS CETTE PAGE DE TRAITEMENT-->
+
 
 <?php 
 
-
+/**AVEC LA METHODE POST ET LE BUTTON SUBMIT ON  RECUPERE LES DONNER DANS CETTE PAGE DE TRAITEMENT OK*/
 
 $nomProduit = $_POST["nomProduit"];
 $prixInitial = $_POST["prixInitial"];
@@ -16,7 +16,7 @@ $time = $_POST["time"];
 $upTime = $_POST["upTime"];
 $choixImage = $_POST["choixImage"];
 
-/**Stockage sous forme de tableau et dans une seul variable les infos saisie depuis le formumaire apres un envoie valide*/
+/**Stockage sous forme de tableau et dans une seul variable les infos saisie depuis le formumaire apres un envoie valide OK*/
 $data_stock_post = array ($nomProduit,$prixInitial,$PrixClic,$upClic,$time,$upTime,$choixImage);
 
 
