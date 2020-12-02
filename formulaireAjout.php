@@ -13,6 +13,9 @@
 <body>
   <!--AJOUT INCLUDE HEADER-->
   <?php include 'src/includes/header.php'?>
+  <!--Ajout page des fonctions-->
+<?php include 'src/includes/functions' ?>
+    
 
   <!--Formulaire pour la saisie des données pour la déclaration d'une nouvelle enchere-->
 

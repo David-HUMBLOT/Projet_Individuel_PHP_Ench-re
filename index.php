@@ -18,6 +18,8 @@
 <?php include 'src/includes/header.php'?>
 <!--AJOUT A INDEX la liste des encheres visuelle-->
 <?php include 'src/includes/EnchereList.php'?>
+<!--Ajout page des fonctions-->
+<?php include 'src/includes/functions' ?>
     
 
 
