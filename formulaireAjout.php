@@ -56,7 +56,7 @@
 
               <tr>
                 <td><label>Prix du Clic</label></td>
-                <td><input type="text" name="PrixClic" required id="prixClic"></td>
+                <td><input type="text" name="PrixClic" required id="PrixClic"></td>
               </tr>
 
               <tr>
