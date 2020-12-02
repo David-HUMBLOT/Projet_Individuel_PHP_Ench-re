@@ -15,5 +15,66 @@
 <body>
    <!--AJOUT INCLUDE HEADER-->
 <?php include 'src/includes/header.php'?>
+
+<!--Formulaire pour la saisie des données pour la déclaration d'une nouvelle enchere-->
+
+<div class = "container-fluid d-flex justify-content-center">
+    <h2>Ajouter une enchére :</h2>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      left
+    </div>
+    <div class="col-6">
+                    
+                    <div></div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div></div>
+
+
+
+    </div>
+    <div class="col">
+     right
+    </div>
+  </div>
+
+ 
+</div>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
