@@ -21,7 +21,7 @@
                     </li>
                     <li class="nav-item">
 
-                        <a class="nav-link js-scroll-trigger text-white font-weight-bold" href="ajoutEnchere.php" id="encherenav">Ajouter une enchère</a>
+                        <a class="nav-link js-scroll-trigger text-white font-weight-bold" href="formulaireAjout.php" id="encherenav">Ajouter une enchère</a>
 
                     </li>
                 </ul>

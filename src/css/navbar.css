@@ -1,11 +1,14 @@
 /**ajout de la bonne couleur à la nav bar**/
 #mainNav {
-    background-color: #3bbb6600 !important;
+    background-color: #3bbb6600 ;
 }
 .navbarResponsive{
-  background-color: #6cc52c00 !important;
+  background-color: #6cc52c00 ;
 
 }
+
+
+
 .btnAjoutEnchere{
     letter-spacing: 5% !important;
     font-size: 18px;

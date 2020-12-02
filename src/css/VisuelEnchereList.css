@@ -20,7 +20,7 @@ height: 40px;
 width: 290px;
 /**Cache le text si il dépasse de son contenu. N'empeche pas de mettre une limitation de
 caratères dans la validation du formulaire***/
-overflow: hidden!important;
+
 }
 /**Ajout visuel timer sur card image**/
 .timer{
@@ -39,5 +39,5 @@ width: 100%;
 .card-text{
 height:150px ;
 width: 290px;
-overflow: hidden!important;
+
 }
