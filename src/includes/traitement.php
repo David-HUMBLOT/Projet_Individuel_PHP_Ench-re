@@ -1,5 +1,10 @@
 <?php 
 
+/**apel au fonction ajoutenchere pour concatener un ajout à json */
+include '../libs/functions.php';
+
+
+
 /**AVEC LA METHODE POST ET LE BUTTON SUBMIT ON  RECUPERE LES DONNER DANS CETTE PAGE DE TRAITEMENT OK*/
 
 if (isset($_POST["ajoutEnchere"])){
