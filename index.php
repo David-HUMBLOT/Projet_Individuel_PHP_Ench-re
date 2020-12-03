@@ -20,6 +20,9 @@
 <?php include 'src/includes/EnchereList.php'?>
 <!--Ajout page des fonctions-->
 <?php include 'src/includes/functions.php' ?>
+
+<?php include 'src/includes/ajoutEnchereList.php' ?>
+
     
 
 

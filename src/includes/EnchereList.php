@@ -1,16 +1,12 @@
 <!--Page ou on aura le visuelle des encheres ajouter apres utilisation du formumaire d'ajout-->
-
-<div class="container_fluid pb-5 mb-5">
-  <!--AJOUT DU TIRE-->
-  <div class="container d-flex justify-content-center">
+<div class="container d-flex justify-content-center">
     <h2>Enchère en cours</h2>
   </div>
 
-  <!--AJOUT VISUEL DES ENCHERES (BRUT)-->
 
+<div class="container-fluid pb-5 mb-5 row row-cols-1 row-cols-md-2">
   <div class="container ">
-
-    <!--Première ranger de 3 carte-->
+  
     <div class="card-deck mt-5">
     <div class="card ">
         <div class="timer">
@@ -24,15 +20,11 @@
           <p >Prix/clic: </p>
           <p>Prix/enchère: </p>
           </div>
-        
-          <!--Ajout du bouton enchérire-->
           <form>
             <button type="button" class="btn btn-success">Enchérir</button>
           </form>
         </div>
       </div>
-
-
 
       <div class="card ">
         <div class="timer">
@@ -46,14 +38,11 @@
           <p >Prix/clic: </p>
           <p>Prix/enchère: </p>
           </div>
-        
-          <!--Ajout du bouton enchérire-->
           <form>
             <button type="button" class="btn btn-success">Enchérir</button>
           </form>
         </div>
       </div>
-
 
       <div class="card ">
         <div class="timer">
@@ -67,14 +56,16 @@
           <p >Prix/clic: </p>
           <p>Prix/enchère: </p>
           </div>
-        
-          <!--Ajout du bouton enchérire-->
           <form>
             <button type="button" class="btn btn-success">Enchérir</button>
           </form>
         </div>
       </div>
 
+      
+
+
+     
     </div>
   </div>
-
+</div>

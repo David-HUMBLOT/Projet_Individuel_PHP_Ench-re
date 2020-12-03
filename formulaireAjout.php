@@ -16,7 +16,8 @@
   <!--Ajout page des fonctions-->
 <?php include 'src/includes/functions.php' ?>
 
-  
+  <!--Ajout page traitement.php-->
+  <?php include 'src/includes/traitement.php' ?>
 
     
 
@@ -41,7 +42,7 @@
 
         <div>
 
-          <form name="ajoutFormulaire" method="POST" action="">
+          <form  method="POST" action="">
             <table>
               <tr>
                 <td><label>NomProduit</label></td>
@@ -94,8 +95,7 @@
     </div>
   </div>
 
-    <!--Ajout page traitement.php-->
-    <?php include 'src/includes/traitement.php' ?>
+    
 
 
 
