@@ -2,72 +2,50 @@
 
 <?php 
 
-/**apel au fonction ajoutenchere pour concatener un ajout à json */
+$json = 'data.json';
 
-
-
-
-/**AVEC LA METHODE POST ET LE BUTTON SUBMIT ON  RECUPERE LES DONNER DANS CETTE PAGE DE TRAITEMENT OK*/
-
+/******************************************************************************************************* */
+/**CAS 1 SI UN AJOUT EST EFFECTUER */
 if (isset($_POST["ajoutEnchere"])){
-
-
-    $nomProduit = $_POST["nomProduit"];
-
-    $prixInitial = $_POST["prixInitial"];
-    $PrixClic = $_POST["PrixClic"];
-    $upClic = $_POST["upClic"];
-    $time = $_POST["time"];
-    $upTime = $_POST["upTime"];
-    $choixImage = $_POST["choixImage"]; 
-
-
+    
     $data_stock_post = array (
-        $nomProduit => $nomProduit,
-        $prixInitial => $prixInitial,
-        $PrixClic => $PrixClic,
-        $upClic => $upClic,
-        $time => $time,
-        $upTime => $upTime,
-        $choixImage => $choixImage,)
+        $nomProduit = "nomProduit" => $_POST["nomProduit"],
+        $prixInitial = "prixInitial" => $_POST["prixInitial"],
+        $PrixClic = "PrixClic" => $_POST["PrixClic"],
+        $upClic = "upClic" => $_POST["upClic"],
+        $time = "time" => $_POST["time"],
+        $upTime = "upTime" => $_POST["upTime"],
+        $choixImage = "choixImage" => $_POST["choixImage"], 
+        $identification = "identification" => [""], /**servira à recuperer une enchere particuliere */
+    );
+/**AJPUT D UN NOUVELE ELEMENT A JSON SANS ECRASER LA DONN2 EXISTANT */
+/***ouvrir (decode) le fichier dans une var $tab*/
+$data_stock_post_string = file_get_contents('data.json');
+$data_stock_post_string = json_decode($data_stock_post_string, true);
+/**mettre $data_stock_post dans la var $tab */
+$data_stock_post_string =  $data_stock_post_string.json_encode($data_stock_post);;
+/**enregistret cette modif dans data.json */
+file_put_contents("data.json", json_encode ($data_stock_post_string));
+};
+/**UNE FOIS LES DONN2E ENREGISTRER IN VEUT QUE A CHAQUE SUBMIT ON GENERER L AFFICHAGE DE LA CAARD AVEC LES DONN2ES POST EN QUESTION Recuperer sur le json à son bon emplacemnt, ^revoir des id pour chaque element*/
 
 
-/**Stockage sous forme de tableau et dans une seul variable les infos saisie depuis le formumaire apres un envoie valide 
-$data_stock_post = array ($nomProduit,$prixInitial,$PrixClic,$upClic,$time,$upTime,$choixImage); 
-sous cette forme ilmanque les clés du coup pose probleme pour la suite et donc on rajoute les clé necessaire avant la varible que 
-on stock grace a =>
+foreach($array as $iden)
+{
+  $mykey = key($array);
+}
+
+?>
+
+
+
+
 
  
-    );*/
-
-
-
-   /**Convertion de data_stock_post au format JSON avec json_encode()*/
-   /**attribution de l'adresse de la page data.json à la variable $json afin de prévenir la réecriture de code */
-   /**var_dump ($json); */
-  
-$json = "../../Json_data_stock_post/data.json";
-/**fil_put_conyent() sert à inserer du contenu (parametre 2) à une destination (paramètre 1) */
-
-//**si json existe   unshift comme push mais ordre en premier */
-
-
-if(isset($json)){
-    $recupJson = file_get_contents($json); //true pour dessigner que ce soit un tableaux associatif
-    $convertJson = json_decode($recupJson, true);
-};
+    
   
     
 
-if ($convertJson){
-    array_unshit($convertJson,$data_stock_post);
-    file_put_contents($json,json_encode($convertJson));
-                }
-
-else {
-    $json = [];
-    array_unshift($convertJson,$data_stock_post);
-    file_put_contents($json,json_encode($convertJson));
-};
-};
 ?>
+<!------------------------------------------------------------------------------------------------------->
+

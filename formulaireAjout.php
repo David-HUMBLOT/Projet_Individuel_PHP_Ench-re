@@ -15,8 +15,7 @@
   <?php include 'src/includes/header.php'?>
   <!--Ajout page des fonctions-->
 <?php include 'src/includes/functions.php' ?>
-  <!--Ajout page traitement.php-->
-  <?php include 'src/includes/traitement.php' ?>
+
   
 
     
@@ -94,6 +93,9 @@
       </div>
     </div>
   </div>
+
+    <!--Ajout page traitement.php-->
+    <?php include 'src/includes/traitement.php' ?>
 
 
 
