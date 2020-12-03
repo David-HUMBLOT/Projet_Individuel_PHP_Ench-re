@@ -16,10 +16,11 @@
 <body>
 <!--AJOUT INCLUDE HEADER-->
 <?php include 'src/includes/header.php'?>
-<!--AJOUT A INDEX la liste des encheres visuelle-->
-<?php include 'src/includes/EnchereList.php'?>
+<!--AJOUT A INDEX la liste des encheres ajouté et généré depuis json-->
+<?php include 'src/includes/AjoutEnchereList.php'?>
 <!--Ajout page des fonctions-->
 <?php include 'src/includes/functions.php' ?>
+
 
 
 

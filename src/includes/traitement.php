@@ -6,7 +6,10 @@ $json = 'data.json';
 
 /******************************************************************************************************* */
 /**CAS 1 SI UN AJOUT EST EFFECTUER */
-if (isset($_POST["ajoutEnchere"])){
+if (isset($_POST["ajoutEnchere"]))
+
+
+{
     
     $data_stock_post =  
     
