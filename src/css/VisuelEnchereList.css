@@ -4,40 +4,26 @@ padding: 0 !important;
 width: 100% !important;
 font-size: 20px;
 letter-spacing: 5%;
-font-family: 'Roboto', sans-serif !important;
-}
-
-
+font-family: 'Roboto', sans-serif !important;}
 .card{
 display:block;
-align-items: center;
-
-}
+align-items: center;}
 /***AJOUT DE DIMENSIONS FIXE POUR LES IMAGES ET LES CONTENUS TXT DES CARD **/
 .card-title{
 font-weight: bold;
 height: 40px;
-width: 290px;
-/**Cache le text si il dépasse de son contenu. N'empeche pas de mettre une limitation de
-caratères dans la validation du formulaire***/
-
-}
+width: 290px;/**Cache le text si il dépasse de son contenu. N'empeche pas de mettre une limitation decaratères dans la validation du formulaire***/}
 /**Ajout visuel timer sur card image**/
 .timer{
-    display: flex;
-    justify-content: center;
-   width: 350px;
-
-    border: 1px solid rgb(172, 169, 169);
-    background-color: rgb(190, 179, 171) ;
-    z-index: 1;
-}
+display: flex;
+justify-content: center;
+width: 350px;
+border: 1px solid rgb(172, 169, 169);
+background-color: rgb(190, 179, 171) ;
+z-index: 1;}
 .card-img-top{
 height:290px!important;
-width: 100%!important;
-}
+width: 100%!important;}
 .card-text{
 height:150px ;
-width: 290px;
-
-}
+width: 290px;}
