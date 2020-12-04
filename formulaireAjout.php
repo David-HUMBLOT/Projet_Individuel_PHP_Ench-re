@@ -42,36 +42,29 @@
 
 
 <!--Creéation formulaire et champs input -->
-
         <div>
-
           <form  method="POST" action="">
             <table>
               <tr>
                 <td><label>NomProduit</label></td>
                 <td><input type="text" name="nomProduit" required id="nomProduit"></td>
               </tr>
-
               <tr>
                 <td><label>PrixInitial</label></td>
                 <td><input type="text" name="prixInitial" required id="prixInitial"></td>
               </tr>
-
               <tr>
                 <td><label>Prix du Clic</label></td>
                 <td><input type="text" name="PrixClic" required id="PrixClic"></td>
               </tr>
-
               <tr>
                 <td><label>Augmentation Prix</label></td>
                 <td><input type="text" name="upClic" required id="upClic"></td>
               </tr>
-
               <tr>
                 <td><label>Durée</label></td>
                 <td><input type="text" name="time" required id="time"></td>
               </tr>
-
               <tr>
                 <td><label>Augmentation duréé</label></td>
                 <td><input type="text" name="upTime" required id="upTime"></td>
