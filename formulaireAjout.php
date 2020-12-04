@@ -36,32 +36,32 @@
             <table>
               <tr>
                 <td><label>NomProduit</label></td>
-                <td><input type="text" name="nomProduit" required id="nomProduit"></td>
+                <td><input type="text" name="nomProduit" required id="nomProduit" placeholder="Ex: Bicyclette"></td>
               </tr>
               <tr>
                 <td><label>PrixInitial</label></td>
-                <td><input type="text" name="prixInitial" required id="prixInitial"></td>
+                <td><input type="text" name="prixInitial" required id="prixInitial" placeholder="Ex: 20 €"></td>
               </tr>
               <tr>
                 <td><label>Prix du Clic</label></td>
-                <td><input type="text" name="PrixClic" required id="PrixClic"></td>
+                <td><input type="text" name="PrixClic" required id="PrixClic" placeholder="Ex: 0,5 cts (pour 1 clic)"></td>
               </tr>
               <tr>
                 <td><label>Augmentation Prix</label></td>
-                <td><input type="text" name="upClic" required id="upClic"></td>
+                <td><input type="text" name="upClic"  required id="upClic" placeholder="Ex: 0,1 cts"></td>
               </tr>
               <tr>
                 <td><label>Durée</label></td>
-                <td><input type="text" name="time" required id="time"></td>
+                <td><input type="text" name="time" required id="time" placeholder="Durée en Heure"></td>
               </tr>
               <tr>
                 <td><label>Augmentation duréé</label></td>
-                <td><input type="text" name="upTime" required id="upTime"></td>
+                <td><input type="text" name="upTime" required id="upTime" placeholder="Durée en Heure"></td>
               </tr>
               <!--Choisire une image de type file coté admin-->
               <tr>
-                <td><label>Choix image</label></td>
-                <td><input type="file" value="" name="choixImage" id="choixImage"></td>
+                <td><label >Choix image</label></td>
+                <td><input type="file" value="" name="choixImage" alt=""  id="choixImage"></td>
               </tr>
               <!--BOUTON DE VALIDATION A PARAMETRER-->
               <tr>

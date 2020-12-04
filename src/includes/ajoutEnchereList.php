@@ -26,7 +26,7 @@ $data_stock_post_array = json_decode($data_stock_post_string, true);
         <div class="timer">
           <p><?=$items['time'];?></p>
         </div>
-        <img src="ressources/img/no_image.png" class="card-img-top" alt="...">
+        <img src="../../ressource/img/<?php echo $items['choixImage'];?>" class="card-img-top"  type ="image" class="img-thumbnail" alt="...">
         <div class="card-body">
           <h5 class="card-title"> <?=$items['nomProduit'];?></h>
           <h6 class="card-title pt-3">Prix:<?=$items['prixInitial'];?> €</h6>
