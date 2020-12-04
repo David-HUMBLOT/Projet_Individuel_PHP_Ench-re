@@ -23,11 +23,9 @@
     <div class="container d-flex justify-content-center">
       <p>Votre enchère à bien été ajouté.</p></div>
   <?php }; ?>
-
   <div class="container">
     <div class="row">
       <div class="col">
-    
       </div>
       <div class="col-6">
         <!--Creéation formulaire et champs input -->

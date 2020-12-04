@@ -1,16 +1,13 @@
+
+
 /**ajout de la bonne couleur à la nav bar**/
 #mainNav {
-    background-color: #1cd158b1 !important ;
-}
-
-
-
+    background-color: #1cd158b1 !important ;}
 .btnAjoutEnchere{
     letter-spacing: 5% !important;
     font-size: 18px;
     width: 220px;
-    height: 50px;
-}
+    height: 50px;}
 /**PLACEMENT ET ANIMATIONS DE LISTENCHERE ET DE ENCHERENAV**/
 #listeenchere:after{
     content: '';
@@ -23,13 +20,11 @@
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: scale(0,1);
-    transform: scale(0,1);
-}
+    transform: scale(0,1);}
 #listeenchere:hover:after {
     opacity: 1;
       -webkit-transform: scale(1);
-      transform: scale(1);
-  }
+      transform: scale(1);}
   #encherenav:after{
     content: '';
     display: block;
@@ -41,11 +36,9 @@
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: scale(0,1);
-    transform: scale(0,1);
-  }
+    transform: scale(0,1);}
   #encherenav:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
-    transform: scale(1);
-    }
+    transform: scale(1);}
 
