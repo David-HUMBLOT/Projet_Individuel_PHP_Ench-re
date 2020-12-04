@@ -3,7 +3,10 @@ include 'traitement.php' ?>
 <!--GENERATEUR DES CARD AVEC LES INFOS DES POST-->
 <div class="container d-flex justify-content-center">
   <h2>Enchère en cours</h2>
+  
 </div>
+
+
 <!--D abord recuperer les donner inscrit sur json et les rendre accesible avec decode-->
 <?php
 $data_stock_post_string = file_get_contents('data.json');

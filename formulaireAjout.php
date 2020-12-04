@@ -27,7 +27,10 @@
     <h2>Ajouter une enchére :</h2>
   </div>
 
-
+  <!--ici on placera un message pour confirmer que l'article à bien été ajouté-->
+<?php if (isset($_POST["ajoutEnchere"])){ ?>
+<div class="container d-flex justify-content-center"><p>Votre enchère à bien été ajouté.</p></div>
+<?php }; ?>
 
   <div class="container">
     <div class="row">
