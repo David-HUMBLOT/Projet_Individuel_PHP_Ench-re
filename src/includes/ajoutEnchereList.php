@@ -27,11 +27,14 @@
             <h6 class="card-title pt-3">Prix: &nbsp<?= $items['prixInitial']; ?> €</h6>
             <div class="card-text">
               <p>Prix/clic:&nbsp <?= $items['PrixClic']; ?>€</p>
-              <p>Prix/enchère:&nbsp€</p>
+              <p>Prix/enchère:&nbsp€ <?= $items['upClic']; ?></p>
             </div>
             <form method="POST" action="#<?= $items['id']?>"> <!--atribution d 'un id unique à a cahaque card avec la finction identification qui attribue un id unique-->
+            
               <button id="_<?= $items['id'] ?>" 
-              type="button" class="btn btn-success">Enchérir</button>
+              type="button" 
+              enctype="multipart/form-data"
+              name = "encherir"  class="btn btn-success" action = "traitement.php">Enchérir</button>
             </form>
         </div>
       </div>

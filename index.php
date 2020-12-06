@@ -19,6 +19,7 @@
 <?php include 'src/includes/AjoutEnchereList.php'?>
 <!--Ajout page des fonctions-->
 <?php include 'src/includes/functions.php' ?>
+
 <!----------------------------------------------------------------------------------------------------------------->
  <!-- jQuery and JS bundle w/ Popper.js -->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

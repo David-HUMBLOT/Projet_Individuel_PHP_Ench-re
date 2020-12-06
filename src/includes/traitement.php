@@ -19,9 +19,12 @@ if (isset($_POST["ajoutEnchere"]))
 'upTime' => $_POST['upTime'],
 'choixImage' => $_POST['choixImage'], 
 'identification' => identification(),
+'gain' => ['gain'],
+
 
  );
  /**servira à recuperer une enchere particuliere _ AJoUT D UN NOUVELE ELEMENT A JSON SANS ECRASER LA DONN2 EXISTANT _ ouvrir (decode) le fichier dans une var $tab*/
+
 $data_stock_post_string = file_get_contents('data.json');
 $data_stock_post_array = json_decode($data_stock_post_string, true);
 /**mettre $data_stock_post dans la var $tab __ $data_stock_post_array =  $data_stock_post_string.json_encode($data_stock_post); _ enregistret cette modif dans data.json 
@@ -44,6 +47,63 @@ function identification(){
     $idEnchere = md5(uniqid(rand(), true)); 
     $_POST['id'] = $idEnchere;
 };
+
+
+
+//Une fois fait il faut récupérer l'id générer quand SI clique sur enchérir afin de modifier  la carte cible dans la listes des enchere.
+//POUR CHAQUE element du tableaux json dont la KEYS est identique à ID generer par la fonction Identification()
+//On en profit comme pour id pour generer la date de fin lié au temps défini ainsi que le gain engendré par clic
+//ne pas oublier de ouvrir json le decode afin d y ajouter les modif apres le encode.
+
+if (isset($_POST['encherir'])){ //si le bouttin un des button encherir est cliqué alors faire
+   
+    $data_stock_post_enrechir = file_get_contents('data.json'); //recupere json
+    $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);//on décode json pour etre utilisable
+    $id = $_POST['id']; // recuperation de l id en question
+
+ //pour chaque tableaux de json 
+ 
+    foreach($data_stock_post_array_encherir  as $key => $items){
+        $id = $_POST['id'];
+        $data_stock_post_enrechir = file_get_contents('data.json');
+        $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);
+        
+        if ($items['id'] == $id){
+            $data_stock_post_enrechir = file_get_contents('data.json');
+            $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);
+            echo $id;
+
+            $_POST['prixInitial'] = $_POST['prixInitial'] + $_POST['upClic'];
+            $items['finEnchere'] = $items['finEnchere'] + $items['upTime'];
+            $_POST['ajoutEnchere'][$key]['prixInital'] =  $items['prixInitial'];   
+        }   
+        array_unshift ($data_stock_post_array_enrechir,$_POST);
+        file_put_contents("data.json", json_encode ($data_stock_post_array_encherir));
+    };
+
+
+
+
+
+    foreach($_POST['ajoutEnchere'] as $key => $items){
+        
+        if ($items['id'] == $id){
+            $data_stock_post_enrechir = file_get_contents('data.json');
+            $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);
+            echo $id;
+
+            $_POST['prixInitial'] = $_POST['prixInitial'] + $_POST['upClic'];
+            $items['finEnchere'] = $items['finEnchere'] + $items['upTime'];
+            $_POST['ajoutEnchere'][$key]['prixInital'] =  $items['prixInitial'];   
+        }
+    }
+ 
+    array_unshift ($data_stock_post_array_enrechir,$_POST);
+    file_put_contents("data.json", json_encode ($data_stock_post_array_encherir));
+};
+
+
+
 ?>
 
 
