@@ -8,6 +8,7 @@
 
 
 <?php include 'traitement.php' ?>
+
 <div class="container-fluid d-flex justify-content-center"><h2>Enchère en cours</h2></div>
 <!--D abord recuperer les donner inscrit sur json et les rendre accesible avec decode-->
 <?php $data_stock_post_string = file_get_contents('data.json'); $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
@@ -23,13 +24,14 @@
         <img src="ressources/img/<?php echo $items['choixImage']; ?>" class="card-img-top" type="image"  alt="..." style="max-height:290px!important;max-width:17.5em!important;">
         <div class="card-body">
           <h5 class="card-title"> <?= $items['nomProduit']; ?></h>
-            <h6 class="card-title pt-3">Prix:<?= $items['prixInitial']; ?> €</h6>
+            <h6 class="card-title pt-3">Prix: &nbsp<?= $items['prixInitial']; ?> €</h6>
             <div class="card-text">
-              <p>Prix/clic: <?= $items['PrixClic']; ?>€</p>
-              <p>Prix/enchère:€</p>
+              <p>Prix/clic:&nbsp <?= $items['PrixClic']; ?>€</p>
+              <p>Prix/enchère:&nbsp€</p>
             </div>
-            <form>
-              <button type="button" class="btn btn-success">Enchérir</button>
+            <form method="POST" action="#<?= $items['id']?>"> <!--atribution d 'un id unique à a cahaque card avec la finction identification qui attribue un id unique-->
+              <button id="_<?= $items['id'] ?>" 
+              type="button" class="btn btn-success">Enchérir</button>
             </form>
         </div>
       </div>

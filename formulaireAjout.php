@@ -34,27 +34,28 @@
             <table>
               <tr>
                 <td><label>NomProduit</label></td>
-                <td><input type="text" name="nomProduit" required id="nomProduit" placeholder="Ex: Bicyclette"></td>
+                <td><input type="text" name="nomProduit"  
+                required id="nomProduit" placeholder="Ex: Bicyclette"></td>
               </tr>
               <tr>
                 <td><label>PrixInitial</label></td>
-                <td><input type="text" name="prixInitial" required id="prixInitial" placeholder="Ex: 20 €"></td>
+                <td><input type="number" step="0.01" min="0.00" name="prixInitial" required id="prixInitial" placeholder="Ex: 20 €">€</td>
               </tr>
               <tr>
                 <td><label>Prix du Clic</label></td>
-                <td><input type="text" name="PrixClic" required id="PrixClic" placeholder="Ex: 0,5 cts (pour 1 clic)"></td>
+                <td><input type="number" step="0.01" min="0.00" max="0.99" name="PrixClic" required id="PrixClic" placeholder="Ex: 0,5 cts (pour 1 clic)">€</td>
               </tr>
               <tr>
                 <td><label>Augmentation Prix</label></td>
-                <td><input type="text" name="upClic"  required id="upClic" placeholder="Ex: 0,1 cts"></td>
+                <td><input type="number" step="0.01" min="0.00" max="0.99" name="upClic"  required id="upClic" placeholder="Ex: 0,1 cts">€</td>
               </tr>
               <tr>
                 <td><label>Durée</label></td>
-                <td><input type="text" name="time" required id="time" placeholder="Durée en Heure"></td>
+                <td><input type="number" name="time" required id="time" placeholder="Durée en Heure">heure</td>
               </tr>
               <tr>
-                <td><label>Augmentation duréé</label></td>
-                <td><input type="text" name="upTime" required id="upTime" placeholder="Durée en Heure"></td>
+                <td><label>Augmentation temps</label></td>
+                <td><input type="number" name="upTime" required id="upTime" placeholder="Durée en Heure">heure</td>
               </tr>
               <!--Choisire une image de type file coté admin-->
               <tr>
@@ -63,7 +64,9 @@
               </tr>
               <!--BOUTON DE VALIDATION A PARAMETRER-->
               <tr>
-                <td><input type="submit" name="ajoutEnchere" value="Envoyer"></td>
+                <td><input type="submit" name="ajoutEnchere" value="Envoyer"
+               
+                ></td>
                 <td></td>
               </tr>
             </table>
