@@ -31,10 +31,10 @@
             </div>
             <form method="POST" action="#<?= $items['id']?>"> <!--atribution d 'un id unique à a cahaque card avec la finction identification qui attribue un id unique-->
             
-              <button id="_<?= $items['id'] ?>" 
+              <button id="<?= $items['id'] ?>" 
               type="button" 
-              enctype="multipart/form-data"
-              name = "encherir"  class="btn btn-success" action = "traitement.php">Enchérir</button>
+             
+              name ="encherir"  class="btn btn-success" action = "ajoutEnchere.php">Enchérir</button>
             </form>
         </div>
       </div>

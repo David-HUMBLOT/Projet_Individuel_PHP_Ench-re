@@ -64,7 +64,7 @@
               </tr>
               <!--BOUTON DE VALIDATION A PARAMETRER-->
               <tr>
-                <td><input type="submit" name="ajoutEnchere" value="Envoyer"
+                <td><input type="submit" name="ajoutEnchere" value="Envoyer" action="ajoutEnchere.php"
                
                 ></td>
                 <td></td>

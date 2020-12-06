@@ -19,9 +19,6 @@ if (isset($_POST["ajoutEnchere"]))
 'upTime' => $_POST['upTime'],
 'choixImage' => $_POST['choixImage'], 
 'identification' => identification(),
-'gain' => ['gain'],
-
-
  );
  /**servira à recuperer une enchere particuliere _ AJoUT D UN NOUVELE ELEMENT A JSON SANS ECRASER LA DONN2 EXISTANT _ ouvrir (decode) le fichier dans une var $tab*/
 
@@ -35,12 +32,6 @@ file_put_contents("data.json", json_encode ($data_stock_post_array));
 };
 
 ?>
-
-
-
-
-
-
 <?php 
 //il nous manque des id achaque card, on fait la function qui attribue des id et cette fonction est placé a la suite des valeur POST de json pares le isset POST
 function identification(){
@@ -48,18 +39,22 @@ function identification(){
     $_POST['id'] = $idEnchere;
 };
 
-
-
 //Une fois fait il faut récupérer l'id générer quand SI clique sur enchérir afin de modifier  la carte cible dans la listes des enchere.
 //POUR CHAQUE element du tableaux json dont la KEYS est identique à ID generer par la fonction Identification()
 //On en profit comme pour id pour generer la date de fin lié au temps défini ainsi que le gain engendré par clic
 //ne pas oublier de ouvrir json le decode afin d y ajouter les modif apres le encode.
 
 if (isset($_POST['encherir'])){ //si le bouttin un des button encherir est cliqué alors faire
-   
+identification();
+    
     $data_stock_post_enrechir = file_get_contents('data.json'); //recupere json
     $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);//on décode json pour etre utilisable
-    $id = $_POST['id']; // recuperation de l id en question
+    $id=$_GET['id'];
+    var_dump (json_encode('data.json'));
+
+    $_POST['prixInitial'] = $_POST['prixInitial'] + $_POST['upClic'];
+    var_dump(json_decode($json));
+
 
  //pour chaque tableaux de json 
  
@@ -71,7 +66,7 @@ if (isset($_POST['encherir'])){ //si le bouttin un des button encherir est cliqu
         if ($items['id'] == $id){
             $data_stock_post_enrechir = file_get_contents('data.json');
             $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);
-            echo $id;
+           echo $id;
 
             $_POST['prixInitial'] = $_POST['prixInitial'] + $_POST['upClic'];
             $items['finEnchere'] = $items['finEnchere'] + $items['upTime'];
@@ -86,8 +81,10 @@ if (isset($_POST['encherir'])){ //si le bouttin un des button encherir est cliqu
 
 
     foreach($_POST['ajoutEnchere'] as $key => $items){
-        
+      print_r ('okq');
+        $id=$_GET['id'];
         if ($items['id'] == $id){
+          
             $data_stock_post_enrechir = file_get_contents('data.json');
             $data_stock_post_array_encherir = json_decode($data_stock_post_encherir, true);
             echo $id;

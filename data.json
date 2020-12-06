@@ -1,39 +1,6 @@
 [
     {
-        "nomProduit": "SDV",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "imagedds.jpg",
-        "ajoutEnchere": "Envoyer",
-        "id": "7e247d6268f5f8dc9cd8f53369572eae"
-    },
-    {
-        "nomProduit": "sqcsc",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "582649cc9e259082b0d923890c0b2bc2"
-    },
-    {
-        "nomProduit": "fonction",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "55d48b3a9a47d460534b03f09f8f83a6"
-    },
-    {
-        "nomProduit": "scsd",
+        "nomProduit": "sdcz",
         "prixInitial": "0.01",
         "PrixClic": "0.02",
         "upClic": "0.02",
@@ -41,157 +8,39 @@
         "upTime": "2",
         "choixImage": "",
         "ajoutEnchere": "Envoyer",
-        "id": "4b724f15db2536409a6a4b7802bda06d"
+        "id": "cdc077904a7da1898048edeb920c0774"
     },
     {
-        "nomProduit": "sdves",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.03",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "aa8600a4d59aac42174e8ad01ad27143"
-    },
-    {
-        "nomProduit": "sv",
+        "nomProduit": "dsfvd",
         "prixInitial": "0.01",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
+        "PrixClic": "0.01",
+        "upClic": "0.01",
+        "time": "1",
+        "upTime": "1",
         "choixImage": "",
         "ajoutEnchere": "Envoyer",
-        "id": "cd84cd5b84ff535ab33e9b742f60b9b5"
+        "id": "e28916acb07e7f049a64c87f072e68a5"
     },
     {
-        "nomProduit": "sv",
+        "nomProduit": "sd",
         "prixInitial": "0.01",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
+        "PrixClic": "0.01",
+        "upClic": "0.01",
+        "time": "1",
+        "upTime": "1",
         "choixImage": "",
         "ajoutEnchere": "Envoyer",
-        "id": "f0e6aaa77eaefed3bc98c6f4f2789a7c"
+        "id": "675c4c670f1632c84bb5db26cbe4903b"
     },
     {
-        "nomProduit": "sqcx",
+        "nomProduit": "TEST FONCTION ENCHERE",
         "prixInitial": "0.02",
         "PrixClic": "0.02",
         "upClic": "0.02",
         "time": "2",
         "upTime": "2",
-        "choixImage": "",
+        "choixImage": "imagees.jpg",
         "ajoutEnchere": "Envoyer",
-        "id": "9b341824ef6036185f684a89e60341ce"
-    },
-    {
-        "nomProduit": "saqdz",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "0fdbbd6bfeca0d534cb1df6d9efcb6b1"
-    },
-    {
-        "nomProduit": "yjk",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "4",
-        "upTime": "3",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "d99d2f62506dd156ac3b6daab6bda77f"
-    },
-    {
-        "nomProduit": "DFCD",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "f56e8e0a21e6aac40c38b62fbab72e9f"
-    },
-    {
-        "nomProduit": "SC",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "67290c6b12c7eec411652275b8e17f94"
-    },
-    {
-        "nomProduit": "SC",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "7753ab1d49e20b3cbb1f7075045ed52f"
-    },
-    {
-        "nomProduit": "o;",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "896ff9f56e1916f15c5bfab857625216"
-    },
-    {
-        "nomProduit": "SC",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "9ff86c36d243e071cca5ceb471713b62"
-    },
-    {
-        "nomProduit": "SC",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer"
-    },
-    {
-        "nomProduit": "XQS",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer"
-    },
-    {
-        "nomProduit": "XQS",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "1",
-        "upTime": "1",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer"
+        "id": "828d6e85fda5a4adbfdece3575088990"
     }
-]   
+]
