@@ -41,6 +41,8 @@ UNE FOIS LES DONN2E ENREGISTRER IN VEUT QUE A CHAQUE SUBMIT ON GENERER L AFFICHA
 //On en profit comme pour id pour generer la date de fin lié au temps défini ainsi que le gain engendré par clic
 //ne pas oublier de ouvrir json le decode afin d y ajouter les modif apres le encode.
 //on décode json pour etre utilisable
+
+
 if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliqué alors faire
   //recupere l'id la carte en question apres clic sur encherir
     $data_stock_post_string = file_get_contents('data.json');
@@ -57,12 +59,17 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
 
     for ($i=0; $i<count ($data_stock_post_array) ; $i++) {
         if ($data_stock_post_array[$i]['id']==$_POST['encherir']){
+            
            //echo $data_stock_post_array[$i]['id'];
 
            $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['upClic'];
            echo  $data_stock_post_array[$i]['prixInitial'] ;
+
+      
+           file_put_contents("data.json", json_encode($data_stock_post_array));
+
+
         };
-        
         
     };
 

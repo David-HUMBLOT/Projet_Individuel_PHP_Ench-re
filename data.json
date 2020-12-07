@@ -1,1 +1,35 @@
-[{"nomProduit":"teetst","prixInitial":"0.02","PrixClic":"0.02","upClic":"0.02","time":"2","upTime":"2","choixImage":"","ajoutEnchere":"Envoyer","id":"cfd7ca00588f5321ed37037e05332dac"},{"nomProduit":"VELO","prixInitial":"0.01","PrixClic":"0.01","upClic":"0.01","time":"1","upTime":"1","choixImage":"","ajoutEnchere":"Envoyer","id":"71b2774c62f05f9db1f6bb9bd0bd10c0"},{"nomProduit":"TEST","prixInitial":"0.01","PrixClic":"0.01","upClic":"0.01","time":"1","upTime":"1","choixImage":"","ajoutEnchere":"Envoyer","id":"5e42e1735e9cedc96f6415bfc447660e"}]
+[
+    {
+        "nomProduit": "zdz",
+        "prixInitial": 0.25,
+        "PrixClic": "0.01",
+        "upClic": "0.01",
+        "time": "1",
+        "upTime": "1",
+        "choixImage": "no_image.png",
+        "ajoutEnchere": "Envoyer",
+        "id": "a2f16d2d373f0c00aed422b20597a498"
+    },
+    {
+        "nomProduit": "test",
+        "prixInitial": 1.42,
+        "PrixClic": "0.02",
+        "upClic": "0.02",
+        "time": "2",
+        "upTime": "2",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "6d7e91f52d86d03cb78e0836c3a564f3"
+    },
+    {
+        "nomProduit": "tdhddj",
+        "prixInitial": 0.33,
+        "PrixClic": "0.01",
+        "upClic": "0.01",
+        "time": "1",
+        "upTime": "1",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "1ceb6bedba3ffea371b7d98c73df4feb"
+    }
+]
