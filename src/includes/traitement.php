@@ -18,6 +18,7 @@ if (isset($_POST["ajoutEnchere"])) {
         'time' => $_POST['time'],
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
+       
         'identification' => identification(),
         
     );
@@ -59,24 +60,21 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
 
     for ($i=0; $i<count ($data_stock_post_array) ; $i++) {
         if ($data_stock_post_array[$i]['id']==$_POST['encherir']){
+
+            $prixEnchere = $data_stock_post_array[$i]['prixInitial'] ;
+            
+            $prixEnchere =   $data_stock_post_array[$i]['prixInitial'] +   $data_stock_post_array[$i]['upClic'];
             
            //echo $data_stock_post_array[$i]['id'];
+            // augmentation du prix initial selon parametre upclic definit
+          
 
-           $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['upClic'];
-           echo  $data_stock_post_array[$i]['prixInitial'] ;
-
-      
+           $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['PrixClic'];
            file_put_contents("data.json", json_encode($data_stock_post_array));
-
-
         };
         
     };
-
-
 };
-
-
 ?>
 
 

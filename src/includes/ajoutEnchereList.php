@@ -24,10 +24,11 @@
         <img src="ressources/img/<?php echo $items['choixImage']; ?>" class="card-img-top" type="image"  alt="..." style="max-height:290px!important;max-width:17.5em!important;">
         <div class="card-body">
           <h5 class="card-title"> <?= $items['nomProduit']; ?></h>
-            <h6 class="card-title pt-3">Prix: &nbsp<?= $items['prixInitial']; ?> €</h6>
+            <h6 class="card-title pt-3">Prix Enchere  : &nbsp<?= $items['prixInitial']; ?> €</h6>
             <div class="card-text">
-              <p>Prix/clic:&nbsp <?= $items['PrixClic']; ?>€</p>
-              <p>Prix/enchère:&nbsp€ <?= $items['upClic']; ?></p>
+              <p>Prix du clic: &nbsp <?= $items['PrixClic']; ?>€</p>
+              <p>Pour &nbsp<?= $items['upClic']; ?>&nbsp€ ajouté à l'enchère</p>
+            
             </div>
             <form method="POST" action="#<?= $items['id']?>"> <!--atribution d 'un id unique à a cahaque card avec la finction identification qui attribue un id unique-->
             
