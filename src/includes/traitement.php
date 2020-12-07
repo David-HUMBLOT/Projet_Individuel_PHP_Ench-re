@@ -19,8 +19,13 @@ if (isset($_POST["ajoutEnchere"])) {
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
         'identification' => identification(),
+       
+      
         
     );
+
+    
+ 
     /**servira à recuperer une enchere particuliere _ AJoUT D UN NOUVELE ELEMENT A JSON SANS ECRASER LA DONN2 EXISTANT _ ouvrir (decode) le fichier dans une var $tab*/
 
     $data_stock_post_string = file_get_contents('data.json');
@@ -29,55 +34,43 @@ if (isset($_POST["ajoutEnchere"])) {
 UNE FOIS LES DONN2E ENREGISTRER IN VEUT QUE A CHAQUE SUBMIT ON GENERER L AFFICHAGE DE LA CARD AVEC LES DONN2ES POST EN QUESTION Recuperer sur le json à son bon emplacemnt, ^revoir des id pour chaque element*/
     array_unshift($data_stock_post_array, $_POST);
     file_put_contents("data.json", json_encode($data_stock_post_array));
+
+
+
+
+    
 };
 
 ?>
+
+
 <?php
 //il nous manque des id achaque card, on fait la function qui attribue des id et cette fonction est placé a la suite des valeur POST de json pares le isset POST
-
-
 //Une fois fait il faut récupérer l'id générer quand SI clique sur enchérir afin de modifier  la carte cible dans la listes des enchere.
 //POUR CHAQUE element du tableaux json dont la KEYS est identique à ID generer par la fonction Identification()
 //On en profit comme pour id pour generer la date de fin lié au temps défini ainsi que le gain engendré par clic
 //ne pas oublier de ouvrir json le decode afin d y ajouter les modif apres le encode.
 //on décode json pour etre utilisable
-
-
 if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliqué alors faire
   //recupere l'id la carte en question apres clic sur encherir
     $data_stock_post_string = file_get_contents('data.json');
     $data_stock_post_array = json_decode($data_stock_post_string, true);
     //s$identification = $data_stock_post_array->{"$id"}; //pour ciblé un élément du tableaux cad ["id"]
     //pour chaque tableaux de json 
-    
-   
     // var_dump ($data_stock_post_array);
-
     //$id = $data_stock_post_array[0]['id'];
-
     //echo "identification=".$id;
-
     for ($i=0; $i<count ($data_stock_post_array) ; $i++) {
         if ($data_stock_post_array[$i]['id']==$_POST['encherir']){
-
             $prixEnchere = $data_stock_post_array[$i]['prixInitial'] ;
-            
             $prixEnchere =   $data_stock_post_array[$i]['prixInitial'] +   $data_stock_post_array[$i]['upClic'];
-            
            //echo $data_stock_post_array[$i]['id'];
             // augmentation du prix initial selon parametre upclic definit
-          
-
            $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['PrixClic'];
            file_put_contents("data.json", json_encode($data_stock_post_array));
         };
-        
     };
 };
-
-
-
-
 ?>
 
 <!--------------------------------TIMER------------------------------------------------->
