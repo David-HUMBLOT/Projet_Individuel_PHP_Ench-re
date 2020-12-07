@@ -1,6 +1,5 @@
 <?php 
-
-//si la fonction existe deja evite de la redéclarer une seconde fois
+// avec le ! sert a voir si la fonction existe deja pour evité de la redéclarer une seconde fois
 if(!function_exists('identification')){
     function identification()
 {
@@ -8,8 +7,6 @@ if(!function_exists('identification')){
     $_POST['id'] = $idEnchere;
 };
 };
-
-
 ?>
 
 

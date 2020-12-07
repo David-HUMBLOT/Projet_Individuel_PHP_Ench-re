@@ -18,12 +18,9 @@ if (isset($_POST["ajoutEnchere"])) {
         'time' => $_POST['time'],
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
-        'identification' => identification(),
-       
-      
-        
+        'identification' => identification(), //j ai ajouter ici identification avec une fonction que j ai creer
     );
-
+// sa c 'est tout au debut quand tu déclare ton premier tableau avec ton button ajout d enchere
     
  
     /**servira à recuperer une enchere particuliere _ AJoUT D UN NOUVELE ELEMENT A JSON SANS ECRASER LA DONN2 EXISTANT _ ouvrir (decode) le fichier dans une var $tab*/
