@@ -32,9 +32,7 @@
             <form method="POST" action="#<?= $items['id']?>"> <!--atribution d 'un id unique à a cahaque card avec la finction identification qui attribue un id unique-->
             
               <button id="<?= $items['id'] ?>" 
-              type="button" 
-             
-              name ="encherir"  class="btn btn-success" action = "ajoutEnchere.php">Enchérir</button>
+              name ="encherir" type="submit" value="<?= $items['id'] ?>" class="btn btn-success" action = "">Enchérir</button>
             </form>
         </div>
       </div>

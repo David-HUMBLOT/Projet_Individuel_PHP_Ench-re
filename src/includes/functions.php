@@ -1,0 +1,17 @@
+<?php 
+
+//si la fonction existe deja evite de la redéclarer une seconde fois
+if(!function_exists('identification')){
+    function identification()
+{
+    $idEnchere = md5(uniqid(rand(), true));
+    $_POST['id'] = $idEnchere;
+};
+};
+
+
+
+
+
+
+?>
