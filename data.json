@@ -1,1 +1,24 @@
-[{"nomProduit":"GTEST","prixInitial":8.2,"PrixClic":"0.05","upClic":"0.1","time":"1","upTime":"1","choixImage":"","ajoutEnchere":"Envoyer","id":"fde1a54f849947bf8528df73173c2609"}]
+[
+    {
+        "nomProduit": "DEFE",
+        "prixInitial": 0.15,
+        "PrixClic": "0.03",
+        "upClic": "0.03",
+        "time": "3",
+        "upTime": "3",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "ca4ff5a63a8d1d8d20d9416dc99c5acb"
+    },
+    {
+        "nomProduit": "dsv",
+        "prixInitial": 0.42,
+        "PrixClic": "0.03",
+        "upClic": "0.02",
+        "time": "4",
+        "upTime": "3",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "cecf41f738d7a91a086058a6b36376ba"
+    }
+]

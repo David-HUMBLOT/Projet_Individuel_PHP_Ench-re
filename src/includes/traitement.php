@@ -18,7 +18,6 @@ if (isset($_POST["ajoutEnchere"])) {
         'time' => $_POST['time'],
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
-       
         'identification' => identification(),
         
     );
@@ -75,8 +74,13 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
         
     };
 };
+
+
+
+
 ?>
 
+<!--------------------------------TIMER------------------------------------------------->
 
 
 
