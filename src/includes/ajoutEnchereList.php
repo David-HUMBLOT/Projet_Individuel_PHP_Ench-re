@@ -17,9 +17,11 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
     <!--A chaque nouvelle carte récuperer les donnée de json pour affecté aux bon emplcement sur le carte-->
     <div class="card-deck mt-5">
       <div class="card ">
-        <div class="time"  id="<?php echo $items['id']; ?>">
+        <div class="btn-listEnchere"  id="<?php echo $items['id']; ?>">
           <p><?php echo $items['time']; ?>&nbspH</p>
-          <P><?php echo $items['fin_date'];?></P>
+         
+          
+          
           <div class="duree d-flex position-absolute w-50 justify-content-center align-items-center font-weight-bold"
                     id="<?= $items['id']?>"></div>
 
@@ -44,6 +46,8 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
       </div>
     </div>
     
+
+
   <?php endforeach; ?>
 </div>
 
@@ -52,25 +56,7 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
 
 
 
-<script>
-            //Gestion du timer by Vincent
-                var timer = setInterval(function countDown() {
-                    var tempAct = new Date(); //On recupere la date UNIX
-                    var heure = Math.floor(tempAct.getTime() / 1000); //On transforme la date en secondes depuis la date fixe UNIX
-                    var timeRemaining = <?php echo $items['fin_date']?> - heure; //On compare les secondes depuis date fixe UNIX PHP à JS
-                    var hoursRemaining = parseInt(timeRemaining / 3600); // conversion en heures
-                    var minutesRemaining = parseInt((timeRemaining % 3600) / 60); // conversion en minutes
-                    var secondsRemaining = parseInt((timeRemaining % 3600) % 60); // conversion en secondes
-                    //On attribue l'id de l'enchere dans la zone où il y a le timer et on dit que l'on souhaite afficher le timer
-                    document.getElementById('<?= $items['id'] ?>').innerHTML = hoursRemaining + ' h : ' + minutesRemaining + ' m : ' + secondsRemaining + ' s ';
-                    if (timeRemaining <= 0) {//Sinon on met expire et on desactive le bouton encherir
-                        document.getElementById('<?= $items['id'] ?>').innerHTML = "EXPIRE";
-                        document.getElementById('_<?= $items['id'] ?>').setAttribute('disabled', ''); // Bouton disabled quand temps expiré
-                        document.getElementById('_<?= $items['id'] ?>').classList.remove('btn-listEnchere');
-                        document.getElementById('_<?= $items['id'] ?>').classList.add('btn-listEnchere2');
-                    }
-                }, 1000); // répéte la fonction toutes les 1 seconde
-            </script>
+
 
 
 
@@ -100,7 +86,7 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
 <?php
 
 
-    $heures   = 10;  // les heures < 24
+    $heures   = $items['time'] ;  // les heures < 24
     $minutes  = 0;   // les minutes  < 60
     $secondes = 0;  // les secondes  < 60
     $annee = date("Y");  // par defaut cette année
@@ -127,7 +113,7 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
         h = parseInt(temps / 3600);
         m = parseInt((temps % 3600) / 60);
         s = parseInt((temps % 3600) % 60);
-        document.getElementById('<?= $items['minutes'] ?>').innerHTML = (h < 10 ? "0" + h : h) + '  h :  ' +
+        document.getElementById('<?= $items['time'] ?>').innerHTML = (h < 10 ? "0" + h : h) + '  h :  ' +
           (m < 10 ? "0" + m : m) + ' mn : ' +
           (s < 10 ? "0" + s : s) + ' s ';
         if ((s == 0 && m == 0 && h == 0)) {
@@ -141,11 +127,9 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
     if ($secondes <= 3600 * 24) {
     ?>
       <span style="font-size: 36px;"> temps</span>
-      <div id="minutes". style="font-size: 36px;"></div></span>
+      <div id="<?= $items['time'] ?>". style="font-size: 36px;"></div></span>
 <?php
     }
-
-
 ?>
 
 

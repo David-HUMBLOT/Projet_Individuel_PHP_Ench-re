@@ -1,5 +1,6 @@
 <?php
 
+
 include 'functions.php';
 
 $json = 'data.json';
@@ -15,15 +16,30 @@ if (isset($_POST["ajoutEnchere"])) {
         'prixInitial' => $_POST['prixInitial'],
         'PrixClic' => $_POST['PrixClic'],
         'upClic' => $_POST['upClic'],
-        'time' => $_POST['time'],
-        'fin_date' => $_POST['fin_date'],
+
+
+        'time' => $_POST['time']+ time(    //timer contiendra l'heure de fin de notre enchère
+            date("H"),
+            date("i"),
+            date("s"),
+            date("m"),
+            date("d"),
+            date("Y")
+        ),
+
+          
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
-        'identification' => identification(), //j ai ajouter ici identification avec une fonction que j ai creer
-    );
+        'identification' => identification(),
+         //j ai ajouter ici identification avec une fonction que j ai creer
+
 // sa c 'est tout au debut quand tu déclare ton premier tableau avec ton button ajout d enchere
     
- 
+);
+
+
+
+
     /**servira à recuperer une enchere particuliere _ AJoUT D UN NOUVELE ELEMENT A JSON SANS ECRASER LA DONN2 EXISTANT _ ouvrir (decode) le fichier dans une var $tab*/
 
     $data_stock_post_string = file_get_contents('data.json');
@@ -58,6 +74,7 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
     // var_dump ($data_stock_post_array);
     //$id = $data_stock_post_array[0]['id'];
     //echo "identification=".$id;
+    
     for ($i=0; $i<count ($data_stock_post_array) ; $i++) {
         if ($data_stock_post_array[$i]['id']==$_POST['encherir']){
             $prixEnchere = $data_stock_post_array[$i]['prixInitial'] ;
@@ -69,9 +86,10 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
 
             //gestion date fin. Incrementation du temp sur clique
             $data_stock_post_array[$i]['fin_date'] += $data_stock_post_array[$i]['upTime'];
+            
+            //permettre l'affichade au bon fomrat avec mktime
+            
 
-
-          
 
 
            file_put_contents("data.json", json_encode($data_stock_post_array));
