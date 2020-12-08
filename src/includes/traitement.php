@@ -9,6 +9,16 @@ if ('data.json' == []) {
 };
 
 
+
+
+  // Définir le nouveau fuseau horaire
+  date_default_timezone_set('Europe/Paris');
+  $date = date('h:i:s');
+
+
+
+
+
 /**AJOUT EST EFFECTUER */
 if (isset($_POST["ajoutEnchere"])) {
     $data_stock_post =  array(
@@ -16,26 +26,16 @@ if (isset($_POST["ajoutEnchere"])) {
         'prixInitial' => $_POST['prixInitial'],
         'PrixClic' => $_POST['PrixClic'],
         'upClic' => $_POST['upClic'],
-
-
-        'time' => $_POST['time']+ time(    //timer contiendra l'heure de fin de notre enchère
-            date("H"),
-            date("i"),
-            date("s"),
-            date("m"),
-            date("d"),
-            date("Y")
-        ),
-
-          
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
         'identification' => identification(),
-         //j ai ajouter ici identification avec une fonction que j ai creer
+        'time' => $_POST['time']+ $date,
+        
+        //j ai ajouter ici identification avec une fonction que j ai creer
 
-// sa c 'est tout au debut quand tu déclare ton premier tableau avec ton button ajout d enchere
-    
-);
+        // sa c 'est tout au debut quand tu déclare ton premier tableau avec ton button ajout d enchere
+
+    );
 
 
 
@@ -48,11 +48,6 @@ if (isset($_POST["ajoutEnchere"])) {
 UNE FOIS LES DONN2E ENREGISTRER IN VEUT QUE A CHAQUE SUBMIT ON GENERER L AFFICHAGE DE LA CARD AVEC LES DONN2ES POST EN QUESTION Recuperer sur le json à son bon emplacemnt, ^revoir des id pour chaque element*/
     array_unshift($data_stock_post_array, $_POST);
     file_put_contents("data.json", json_encode($data_stock_post_array));
-
-
-
-
-    
 };
 
 ?>
@@ -66,7 +61,7 @@ UNE FOIS LES DONN2E ENREGISTRER IN VEUT QUE A CHAQUE SUBMIT ON GENERER L AFFICHA
 //ne pas oublier de ouvrir json le decode afin d y ajouter les modif apres le encode.
 //on décode json pour etre utilisable
 if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliqué alors faire
-  //recupere l'id la carte en question apres clic sur encherir
+    //recupere l'id la carte en question apres clic sur encherir
     $data_stock_post_string = file_get_contents('data.json');
     $data_stock_post_array = json_decode($data_stock_post_string, true);
     //s$identification = $data_stock_post_array->{"$id"}; //pour ciblé un élément du tableaux cad ["id"]
@@ -74,26 +69,25 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
     // var_dump ($data_stock_post_array);
     //$id = $data_stock_post_array[0]['id'];
     //echo "identification=".$id;
-    
-    for ($i=0; $i<count ($data_stock_post_array) ; $i++) {
-        if ($data_stock_post_array[$i]['id']==$_POST['encherir']){
-            $prixEnchere = $data_stock_post_array[$i]['prixInitial'] ;
+
+    for ($i = 0; $i < count($data_stock_post_array); $i++) {
+        if ($data_stock_post_array[$i]['id'] == $_POST['encherir']) {
+            $prixEnchere = $data_stock_post_array[$i]['prixInitial'];
             $prixEnchere =   $data_stock_post_array[$i]['prixInitial'] +   $data_stock_post_array[$i]['upClic'];
-           //echo $data_stock_post_array[$i]['id'];
+            //echo $data_stock_post_array[$i]['id'];
             // augmentation du prix initial selon parametre upclic definit
-           $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['PrixClic'];
+            $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['PrixClic'];
 
 
             //gestion date fin. Incrementation du temp sur clique
             $data_stock_post_array[$i]['fin_date'] += $data_stock_post_array[$i]['upTime'];
-            
+
             //permettre l'affichade au bon fomrat avec mktime
-            
 
-
-
-           file_put_contents("data.json", json_encode($data_stock_post_array));
+            file_put_contents("data.json", json_encode($data_stock_post_array));
         };
+
+        
     };
 };
 ?>

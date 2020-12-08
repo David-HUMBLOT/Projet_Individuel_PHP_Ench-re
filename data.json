@@ -1,145 +1,50 @@
 [
     {
-        "nomProduit": "sfdsz",
-        "prixInitial": "0.03",
-        "PrixClic": "0.04",
-        "upClic": "0.03",
-        "time": "3",
-        "upTime": "3",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "c8c75998b9a9c76fd396e1fded8ed00c"
-    },
-    {
-        "nomProduit": "scs",
-        "prixInitial": "0.03",
-        "PrixClic": "0.03",
-        "upClic": "0.03",
-        "time": "3",
-        "upTime": "3",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "5af95943c24436da3a3ce26f238aa45e"
-    },
-    {
-        "nomProduit": "sqcsc",
-        "prixInitial": "0.02",
+        "nomProduit": "lol",
+        "prixInitial": 0.12,
         "PrixClic": "0.02",
         "upClic": "0.02",
         "time": "2",
         "upTime": "2",
         "choixImage": "",
         "ajoutEnchere": "Envoyer",
-        "id": "f636f829fe44425abe7374747a760e43"
+        "id": "b83e04b6821cda1a8e688cd4f8e767c6",
+        "fin_date": 8
     },
     {
-        "nomProduit": "sqcsc",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "cf7584fff4d6b801eb6ebdc738524ada"
-    },
-    {
-        "nomProduit": "sqcsc",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "8ed7ec0f91371e72728c0a4076ef8ae9"
-    },
-    {
-        "nomProduit": "SDV",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "3",
-        "upTime": "3",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "d73759ea5e91191d40cbe13fed8d1a56"
-    },
-    {
-        "nomProduit": "sds",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "376cf946478fcf4e630e30a9206b5c18"
-    },
-    {
-        "nomProduit": "sds",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "bada1dd1c3240984fd570be34614da0e"
-    },
-    {
-        "nomProduit": "sds",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "c44b1c75d02c37b163a39f5c9054c84a"
-    },
-    {
-        "nomProduit": "sds",
-        "prixInitial": "0.01",
-        "PrixClic": "0.01",
-        "upClic": "0.01",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "fba6bb5857e4b51b8f23ab31dc9c924f"
-    },
-    {
-        "nomProduit": "asd",
-        "prixInitial": "0.02",
-        "PrixClic": "0.02",
-        "upClic": "0.02",
-        "time": "2",
-        "upTime": "2",
-        "choixImage": "",
-        "ajoutEnchere": "Envoyer",
-        "id": "4704ac658ccb3d7109dd245b4b470541"
-    },
-    {
-        "nomProduit": "test",
-        "prixInitial": "0.04",
+        "nomProduit": "SC",
+        "prixInitial": 0.08,
         "PrixClic": "0.03",
         "upClic": "0.02",
-        "time": "3",
-        "upTime": "6",
+        "time": "2",
+        "upTime": "2",
         "choixImage": "",
         "ajoutEnchere": "Envoyer",
-        "id": "7e519d4c876bb7253bff7832acf778f4"
+        "id": "9dc861eedccf8b82a15d769dff709c1c",
+        "fin_date": 4
     },
     {
-        "nomProduit": "test",
-        "prixInitial": "0.01",
+        "nomProduit": "sdfs",
+        "prixInitial": "0.02",
         "PrixClic": "0.02",
         "upClic": "0.02",
         "time": "2",
         "upTime": "2",
         "choixImage": "",
         "ajoutEnchere": "Envoyer",
-        "id": "60fffb5b1931c6cc2b5e43964c6cc01d"
+        "id": "2aad125780178940f7cad20d3c888a26",
+        "fin_date": 2
+    },
+    {
+        "nomProduit": "sd",
+        "prixInitial": 0.46,
+        "PrixClic": "0.02",
+        "upClic": "0.02",
+        "time": "2",
+        "upTime": "2",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "d8fc6596aa79004ad089cc88b180b50c",
+        "fin_date": 44
     }
 ]
