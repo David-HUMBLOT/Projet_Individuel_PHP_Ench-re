@@ -28,15 +28,16 @@ if (isset($_POST["ajoutEnchere"])) {
         'upClic' => $_POST['upClic'],
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
-        'identification' => identification(),
-        'time' => $_POST['time']+ $date,
-        'fin_date' => $_POST['fin_date'],
+        'id' => md5(uniqid(rand(), true)),
+        'duree' => $_POST['time'],
+        'date_fin' => mktime(date("H")+ $_POST['time'], date("i"), date("s"), date("m"), date("d"), date("Y")),
         
         //j ai ajouter ici identification avec une fonction que j ai creer
 
         // sa c 'est tout au debut quand tu déclare ton premier tableau avec ton button ajout d enchere
 
     );
+    var_dump($data_stock_post);
 
 
 
@@ -47,7 +48,7 @@ if (isset($_POST["ajoutEnchere"])) {
     $data_stock_post_array = json_decode($data_stock_post_string, true);
     /**mettre $data_stock_post dans la var $tab __ $data_stock_post_array =  $data_stock_post_string.json_encode($data_stock_post); _ enregistret cette modif dans data.json 
 UNE FOIS LES DONN2E ENREGISTRER IN VEUT QUE A CHAQUE SUBMIT ON GENERER L AFFICHAGE DE LA CARD AVEC LES DONN2ES POST EN QUESTION Recuperer sur le json à son bon emplacemnt, ^revoir des id pour chaque element*/
-    array_unshift($data_stock_post_array, $_POST);
+    array_unshift($data_stock_post_array, $data_stock_post);
     file_put_contents("data.json", json_encode($data_stock_post_array));
 };
 
