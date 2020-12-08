@@ -54,6 +54,7 @@
               <tr>
                 <td><label>Durée</label></td>
                 <td><input type="number" name="time" required id="time" placeholder="Durée en Heure">heure</td>
+                <td><input type="number" style="visibility:hidden;" name="fin_date"  id="fin_date" value="0"></td>
               </tr>
               <tr>
                 <td><label>Augmentation temps</label></td>

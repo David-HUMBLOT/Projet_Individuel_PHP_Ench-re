@@ -1,5 +1,40 @@
 [
     {
+        "nomProduit": "zdad",
+        "prixInitial": "0.02",
+        "PrixClic": "0.02",
+        "upClic": "0.02",
+        "time": "2",
+        "fin_date": "4",
+        "upTime": "2",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "a60b2ae0ef86db9037b59ac61f14745c"
+    },
+    {
+        "nomProduit": "dsad",
+        "prixInitial": "0.02",
+        "PrixClic": "0.02",
+        "upClic": "0.02",
+        "time": "2",
+        "fin_date": "",
+        "upTime": "2",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "6ac8a417bbf336640e3afd253db8de50"
+    },
+    {
+        "nomProduit": "test",
+        "prixInitial": "0.04",
+        "PrixClic": "0.04",
+        "upClic": "0.03",
+        "time": "3",
+        "upTime": "3",
+        "choixImage": "",
+        "ajoutEnchere": "Envoyer",
+        "id": "ab1168f9bdcfa71e9e450ded0ceab3af"
+    },
+    {
         "nomProduit": "lol",
         "prixInitial": 0.12,
         "PrixClic": "0.02",

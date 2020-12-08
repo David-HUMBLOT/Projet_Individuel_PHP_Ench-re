@@ -47,11 +47,9 @@ $data_stock_post_array = json_decode($data_stock_post_string, true); ?>
 
 <script>
 
-  
-  
-  var timer = setInterval(  function CompteaRebour() 
-  {
-    // temps--;
+
+  var timer = setInterval(  function CompteaRebour() {
+    temps--;
     <?php
 $heures   = $items['fin_date'];  // les heures < 24
 $minutes  = 0;   // les minutes  < 60

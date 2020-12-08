@@ -30,6 +30,7 @@ if (isset($_POST["ajoutEnchere"])) {
         'choixImage' => $_POST['choixImage'],
         'identification' => identification(),
         'time' => $_POST['time']+ $date,
+        'fin_date' => $_POST['fin_date'],
         
         //j ai ajouter ici identification avec une fonction que j ai creer
 
