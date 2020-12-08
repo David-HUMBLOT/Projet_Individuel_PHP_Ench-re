@@ -16,6 +16,7 @@ if (isset($_POST["ajoutEnchere"])) {
         'PrixClic' => $_POST['PrixClic'],
         'upClic' => $_POST['upClic'],
         'time' => $_POST['time'],
+        'fin_date' => $_POST['fin_date'],
         'upTime' => $_POST['upTime'],
         'choixImage' => $_POST['choixImage'],
         'identification' => identification(), //j ai ajouter ici identification avec une fonction que j ai creer
@@ -64,6 +65,15 @@ if (isset($_POST['encherir'])) { //si le bouttin un des button encherir est cliq
            //echo $data_stock_post_array[$i]['id'];
             // augmentation du prix initial selon parametre upclic definit
            $data_stock_post_array[$i]['prixInitial'] += $data_stock_post_array[$i]['PrixClic'];
+
+
+            //gestion date fin. Incrementation du temp sur clique
+            $data_stock_post_array[$i]['fin_date'] += $data_stock_post_array[$i]['upTime'];
+
+
+          
+
+
            file_put_contents("data.json", json_encode($data_stock_post_array));
         };
     };

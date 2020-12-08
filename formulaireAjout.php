@@ -40,6 +40,11 @@
               <tr>
                 <td><label>PrixInitial</label></td>
                 <td><input type="number" step="0.01" min="0.00" name="prixInitial" required id="prixInitial" placeholder="Ex: 20 €">€</td>
+
+                <td><input type="number" value = "0" step="0.01" min="0.00" name="fin_date"  id="fin_date" 
+               style="visibility:hidden"></td>
+
+
               </tr>
               <tr>
                 <td><label>Prix du Clic</label></td>
